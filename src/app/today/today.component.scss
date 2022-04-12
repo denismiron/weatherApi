@@ -1,0 +1,23 @@
+.container{
+  padding-top: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  h1{
+    text-align: center;
+  }
+    tbody tr:nth-child(odd) {
+      background-color: #b2aeb1;
+    }
+
+    //tbody tr:nth-child(even) {
+    //  background-color: #485e48;
+    //}
+    table {
+      margin-top: 1rem;
+      table-layout: fixed;
+      width: 100%;
+      border: 1px dashed black;
+      background-color: #b2aeb1;
+    }
+  }
+
