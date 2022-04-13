@@ -1,4 +1,5 @@
 .container{
+  //display: flex;
   padding-top: 3rem;
   max-width: 800px;
   margin: 0 auto;
@@ -9,9 +10,6 @@
       background-color: #b2aeb1;
     }
 
-    //tbody tr:nth-child(even) {
-    //  background-color: #485e48;
-    //}
     table {
       margin-top: 1rem;
       table-layout: fixed;
@@ -19,5 +17,9 @@
       border: 1px dashed black;
       background-color: #b2aeb1;
     }
+
   }
+agm-map{
+  height: 500px;
+}
 

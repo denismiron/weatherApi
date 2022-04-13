@@ -6,7 +6,7 @@ import {HttpClient, HttpParams} from "@angular/common/http";
 })
 export class WeatherService {
   url = "https://api.openweathermap.org/data/2.5/weather"
-  apiKey = "1776e42ba911e904cbf1ca181326d093"
+  apiWeatherKey = "1776e42ba911e904cbf1ca181326d093"
   constructor(private http: HttpClient) {
   }
 
@@ -15,7 +15,7 @@ export class WeatherService {
       .set('lat', lat)
       .set('lon', lon)
       .set('units', 'imperial')
-      .set('appid', this.apiKey)
+      .set('appid', this.apiWeatherKey)
 
     return this.http.get(this.url, {params})
   }
@@ -23,7 +23,7 @@ export class WeatherService {
       let params = new HttpParams()
         .set('q',city)
         .set('units','imperial')
-        .set('appid',this.apiKey)
+        .set('appid',this.apiWeatherKey)
     return this.http.get(this.url, {params})
   }
 }

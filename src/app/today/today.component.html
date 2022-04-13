@@ -1,11 +1,11 @@
 <div class="container">
-  <div class="input">
+  <h1>Weather in {{weather.name}},{{weather.sys.country}}</h1>
+  <div class="searchForm">
     <input class="form-control" type="text" #userInput placeholder="Enter city name">
     <div>
       <button (click)="getCity(userInput.value)">Search</button>
     </div>
   </div>
-  <h1>Weather in {{weather.name}},{{weather.sys.country}}</h1>
   <div class="tempo">
     <span>
       Temperature {{(weather.main.temp-32)*5/9 | number:'1.0-1'}}&#176;C
@@ -34,5 +34,8 @@
       </tr>
     </tbody>
   </table>
+<!--  <agm-map [latitude]="lat" [longitude]="lon">-->
+<!--    <agm-marker [latitude]="lat" [longitude]="lon"></agm-marker>-->
+<!--  </agm-map>-->
 </div>
 
